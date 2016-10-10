@@ -24,38 +24,45 @@ function loaded () {
 		fadeScrollbars: true
 	});
     var $footerUp = $("#footerUp");
-    var iconfontArr = ["&#xe602;","&#xe601;","&#xe603;","&#xe600;","&#xe610;"];
-    touch.on($footerUp,'tap',function (e){
-        var $target = $(e.target).index();
-        var $header = $("#header");
-        var $footerDiv = $("#footer>div:eq("+$target+")");
-        $("#footer>div").removeClass();
-        $footerDiv.addClass("divColor");
-        if($target === 0){
-            $header.css("background","rgba(0,143,58,0)");
-            $header.html(
-            "<div class='headerBox0'>" +
-                    "请输入要搜索的商品名称" +
-                    "<i class='iconfont headerIconfont'>&#xe60b;</i>" +
-            "</div>"
-            );
-        }else if($target === 1){
-            $header.css("background","rgba(0,143,58,.8)");
-            $header.html(
-                    "<div class='headerBox0'>" +
-                    "请输入要搜索的商品名称" +
-                    "<i class='iconfont headerIconfont'>&#xe60b;</i>" +
-                    "</div>"
-            );
-        }else if($target === 2 || 3 || 4){
-            $header.css("background","rgba(0,143,58,.8)");
-            $header.html(
-                    "<div class='headerBox2'>" +
-                    $footerDiv.attr("footerText") +
-                    "</div>"
-            );
-        }
-    });
+	touch.on($footerUp,'tap',function (e){
+		var $target = $(e.target).index();
+		/*var $footerDiv = $("#footer>div:eq("+$target+")");
+		 $("#footer>div").removeClass();
+		 $footerDiv.addClass("divColor");*/
+		if($target === 0){
+			/*$header.css("background","rgba(0,143,58,0)");*/
+			window.location = "index.html";
+			/*$header.html(
+			 "<div class='headerBox0'>" +
+			 "请输入要搜索的商品名称" +
+			 "<i class='iconfont headerIconfont'>&#xe60b;</i>" +
+			 "</div>"
+			 );*/
+		}else if($target === 1){
+			window.location = "html/list.html";
+			/*$header.css("background","rgba(0,143,58,.8)");*/
+			/*$header.html(
+			 "<div class='headerBox0'>" +
+			 "请输入要搜索的商品名称" +
+			 "<i class='iconfont headerIconfont'>&#xe60b;</i>" +
+			 "</div>"
+			 );*/
+		}else if($target === 2){
+			/*$header.css("background","rgba(0,143,58,.8)");*/
+			window.location = "html/my.html";
+			/*$header.html(
+			 "<div class='headerBox2'>" +
+			 $footerDiv.attr("footerText") +
+			 "</div>"
+			 );*/
+		}else if($target === 3){
+			/*$header.css("background","rgba(0,143,58,.8)");*/
+			window.location = "html/shopCar.html";
+		}else if($target === 4){
+			/*$header.css("background","rgba(0,143,58,.8)");*/
+			window.location = "html/aboutUs.html";
+		}
+	});
 }
 document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 </script>
@@ -132,15 +139,15 @@ document.addEventListener('touchmove', function (e) { e.preventDefault(); }, fal
 		<i class="iconfont">&#xe612;</i>
 		<div class="iconfontText">列表</div>
 	</div>
-	<div footerText="我的">
+	<div>
 		<i class="iconfont">&#xe60c;</i>
 		<div class="iconfontText">我的</div>
 	</div>
-	<div footerText="购物车">
+	<div>
 		<i class="iconfont">&#xe609;</i>
 		<div class="iconfontText">购物车</div>
 	</div>
-	<div footerText="关于我们">
+	<div>
 		<i class="iconfont">&#xe613;</i>
 		<div class="iconfontText">关于我们</div>
 	</div>

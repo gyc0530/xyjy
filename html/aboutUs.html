@@ -28,40 +28,15 @@
             $header.css("background","rgba(0,143,58,.8)");
             touch.on($footerUp,'tap',function (e){
                 var $target = $(e.target).index();
-                /*var $footerDiv = $("#footer>div:eq("+$target+")");
-                $("#footer>div").removeClass();
-                $footerDiv.addClass("divColor");*/
                 if($target === 0){
-                    /*$header.css("background","rgba(0,143,58,0)");*/
                     window.location = "../index.html";
-                    /*$header.html(
-                            "<div class='headerBox0'>" +
-                            "请输入要搜索的商品名称" +
-                            "<i class='iconfont headerIconfont'>&#xe60b;</i>" +
-                            "</div>"
-                    );*/
                 }else if($target === 1){
-                    /*$header.css("background","rgba(0,143,58,.8)");*/
-                    /*$header.html(
-                            "<div class='headerBox0'>" +
-                            "请输入要搜索的商品名称" +
-                            "<i class='iconfont headerIconfont'>&#xe60b;</i>" +
-                            "</div>"
-                    );*/
+                    window.location = "list.html";
                 }else if($target === 2){
-                    /*$header.css("background","rgba(0,143,58,.8)");*/
                     window.location = "my.html";
-                    /*$header.html(
-                            "<div class='headerBox2'>" +
-                            $footerDiv.attr("footerText") +
-                            "</div>"
-                    );*/
                 }else if($target === 3){
-                    /*$header.css("background","rgba(0,143,58,.8)");*/
                     window.location = "shopCar.html";
                 }else if($target === 4){
-                    /*$header.css("background","rgba(0,143,58,.8)");*/
-                    window.location = "aboutUs.html";
                 }
             });
         }
@@ -70,9 +45,8 @@
 </head>
 <body onload="loaded()">
 <div id="header">
-    <div class="headerBox0">
-        请输入要搜索的商品名称
-        <i class="iconfont headerIconfont">&#xe60b;</i>
+    <div class="headerBox2">
+        关于我们
     </div>
 </div>
 <div id="wrapper">
@@ -136,7 +110,7 @@
         <i class="iconfont">&#xe60a;</i>
         <div class="iconfontText">首页</div>
     </div>
-    <div class="divColor">
+    <div>
         <i class="iconfont">&#xe612;</i>
         <div class="iconfontText">列表</div>
     </div>
@@ -148,7 +122,7 @@
         <i class="iconfont">&#xe609;</i>
         <div class="iconfontText">购物车</div>
     </div>
-    <div>
+    <div class="divColor">
         <i class="iconfont">&#xe613;</i>
         <div class="iconfontText">关于我们</div>
     </div>

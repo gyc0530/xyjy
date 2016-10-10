@@ -23,47 +23,38 @@
                 shrinkScrollbars: 'scale',
                 fadeScrollbars: true
             });
-            var $footerUp = $("#footerUp");
-            var $header = $("#header");
-            $header.css("background","rgba(0,143,58,.8)");
-            touch.on($footerUp,'tap',function (e){
+            /*var $footerUp = $("#footerUp");*/
+            /*touch.on($footerUp,'tap',function (e){
                 var $target = $(e.target).index();
-                /*var $footerDiv = $("#footer>div:eq("+$target+")");
+                var $header = $("#header");
+                var $footerDiv = $("#footer>div:eq("+$target+")");
                 $("#footer>div").removeClass();
-                $footerDiv.addClass("divColor");*/
+                $footerDiv.addClass("divColor");
                 if($target === 0){
-                    /*$header.css("background","rgba(0,143,58,0)");*/
-                    window.location = "../index.html";
-                    /*$header.html(
+                    $header.css("background","rgba(0,143,58,0)");
+                    $header.html(
                             "<div class='headerBox0'>" +
                             "请输入要搜索的商品名称" +
                             "<i class='iconfont headerIconfont'>&#xe60b;</i>" +
                             "</div>"
-                    );*/
+                    );
                 }else if($target === 1){
-                    /*$header.css("background","rgba(0,143,58,.8)");*/
-                    /*$header.html(
+                    $header.css("background","rgba(0,143,58,.8)");
+                    $header.html(
                             "<div class='headerBox0'>" +
                             "请输入要搜索的商品名称" +
                             "<i class='iconfont headerIconfont'>&#xe60b;</i>" +
                             "</div>"
-                    );*/
-                }else if($target === 2){
-                    /*$header.css("background","rgba(0,143,58,.8)");*/
-                    window.location = "my.html";
-                    /*$header.html(
+                    );
+                }else if($target === 2 || 3 || 4){
+                    $header.css("background","rgba(0,143,58,.8)");
+                    $header.html(
                             "<div class='headerBox2'>" +
                             $footerDiv.attr("footerText") +
                             "</div>"
-                    );*/
-                }else if($target === 3){
-                    /*$header.css("background","rgba(0,143,58,.8)");*/
-                    window.location = "shopCar.html";
-                }else if($target === 4){
-                    /*$header.css("background","rgba(0,143,58,.8)");*/
-                    window.location = "aboutUs.html";
+                    );
                 }
-            });
+            });*/
         }
         document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
     </script>
@@ -131,12 +122,12 @@
         </ul>
     </div>
 </div>
-<div id="footer">
+<!--<div id="footer">
     <div>
         <i class="iconfont">&#xe60a;</i>
         <div class="iconfontText">首页</div>
     </div>
-    <div class="divColor">
+    <div>
         <i class="iconfont">&#xe612;</i>
         <div class="iconfontText">列表</div>
     </div>
@@ -144,7 +135,7 @@
         <i class="iconfont">&#xe60c;</i>
         <div class="iconfontText">我的</div>
     </div>
-    <div>
+    <div class="divColor">
         <i class="iconfont">&#xe609;</i>
         <div class="iconfontText">购物车</div>
     </div>
@@ -159,6 +150,6 @@
     <div></div>
     <div></div>
     <div></div>
-</div>
+</div>-->
 </body>
 </html>
