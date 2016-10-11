@@ -1,0 +1,114 @@
+#scroller ul li{
+    padding: 0;
+    border: 0;
+    margin-top: 10px;
+}
+#scroller ul .wrapper_nav{
+    padding: 0;
+    border: 0;
+    margin-top: 0;
+}
+#scroller ul .wrapper_nav div{
+    padding: 0;
+    height: 23vh;
+}
+#scroller ul .wrapper_hot .wrapper_hot_box{
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#scroller ul .wrapper_hot .wrapper_hot_box .wrapper_hot_box_container{
+    width: 20%;
+    height: 60%;
+    border-radius: 50%;
+}
+#scroller ul .wrapper_sale div{
+    padding: 0;
+    height: 22vh;
+}
+/*list1*/
+#scroller ul .wrapper_list1>div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+#scroller ul .wrapper_list1{
+    width: 100%;
+    height: 60vh;
+}
+#scroller ul .wrapper_list1 .wrapper_list1_1{
+    width: 100%;
+    height: 15%;
+}
+#scroller ul .wrapper_list1 .wrapper_list1_1>div{
+    width: 70%;
+    height: 70%;
+}
+#scroller ul .wrapper_list1 .wrapper_list1_2{
+    width: 100%;
+    height: 20%;
+}
+#scroller ul .wrapper_list1 .wrapper_list1_2>div{
+    width: 45%;
+    height: 100%;
+}
+#scroller ul .wrapper_list1 .wrapper_list1_3{
+    width: 100%;
+    height: 25%;
+    padding: 5px 0;
+}
+#scroller ul .wrapper_list1 .wrapper_list1_3>div{
+    width: 25%;
+    height: 100%;
+    border: 1px solid #000;
+}
+#scroller ul .wrapper_list1 .wrapper_list1_4{
+    width: 100%;
+    height: 40%;
+    flex-wrap: wrap;
+    padding: 0;
+}
+#scroller ul .wrapper_list1 .wrapper_list1_4>div{
+    width: 50%;
+    height: 50%;
+    border: 1px solid #000;
+}
+/*list2*/
+#scroller ul .wrapper_list2>div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+#scroller ul .wrapper_list2{
+    width: 100%;
+    height: 60vh;
+}
+#scroller ul .wrapper_list2 .wrapper_list2_1{
+    width: 100%;
+    height: 15%;
+}
+#scroller ul .wrapper_list2 .wrapper_list2_1>div{
+    width: 70%;
+    height: 70%;
+}
+#scroller ul .wrapper_list2 .wrapper_list2_2{
+    width: 100%;
+    height: 30%;
+}
+#scroller ul .wrapper_list2 .wrapper_list2_2>div{
+    width: 45%;
+    height: 100%;
+}
+#scroller ul .wrapper_list2 .wrapper_list2_3{
+    width: 100%;
+    height: 55%;
+    padding: 5px 0;
+}
+#scroller ul .wrapper_list2 .wrapper_list2_3>div{
+    width: 25%;
+    height: 100%;
+    border: 1px solid #000;
+}
