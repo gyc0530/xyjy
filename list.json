@@ -1,0 +1,91 @@
+[
+  {
+    "itemid": "0",
+    "itemdetail": [
+      "全部分类",
+      "饮用水",
+      "茶饮|咖啡",
+      "功能饮料"
+    ],
+    "itemdrink": [
+      {
+        "id": "item1_0",
+        "img": "",
+        "dec": "饮用水",
+        "price": "1"
+      },
+      {
+        "id": "item1_1",
+        "dec": "饮用水",
+        "img": "",
+        "price": "1"
+      }
+    ],
+    "itemCont": [
+      {
+        "id": "item1_0",
+        "img": "1b6e33347e9b40bf9e8a1a7f869f5c46.png",
+        "dec": "商品1",
+        "price": "12"
+      },
+      {
+        "id": "item1_1",
+        "dec": "商品1",
+        "img": "1b6e33347e9b40bf9e8a1a7f869f5c46.png",
+        "price": "13"
+      },
+      {
+        "id": "item1_2",
+        "dec": "商品1",
+        "img": "1b6e33347e9b40bf9e8a1a7f869f5c46.png",
+        "price": "14"
+      },
+      {
+        "id": "item1_3",
+        "dec": "商品1",
+        "img": "1b6e33347e9b40bf9e8a1a7f869f5c46.png",
+        "price": "15"
+      },
+      {
+        "id": "item1_4",
+        "dec": "商品1",
+        "img": "1b6e33347e9b40bf9e8a1a7f869f5c46.png",
+        "price": "12"
+      }
+    ]
+  },
+  {
+    "itemid": "1",
+    "itemdetail": [
+      "全部分类"
+    ],
+    "itemCont": [
+      {
+        "id": "item2_1",
+        "dec": "商品2",
+        "img": "1b6e33347e9b40bf9e8a1a7f869f5c46.png",
+        "price": "12"
+      }
+    ]
+  },
+  {
+    "itemid": "2",
+    "itemdetail": [
+      "全部分类"
+    ],
+    "itemCont": [
+      {
+        "id": "item3_1",
+        "dec": "商品3",
+        "img": "1b6e33347e9b40bf9e8a1a7f869f5c46.png",
+        "price": "12"
+      },
+      {
+        "dec": "商品3",
+        "id": "item3_2",
+        "img": "1b6e33347e9b40bf9e8a1a7f869f5c46.png",
+        "price": "12"
+      }
+    ]
+  }
+]

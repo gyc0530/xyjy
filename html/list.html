@@ -2,72 +2,18 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <title>祥源久业</title>
+    <link rel="stylesheet" href="../css/mui.min.css">
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/list.css">
     <link rel="stylesheet" href="../css/font/iconfont.css">
     <link rel="stylesheet" href="../css/common.css">
-    <script type="text/javascript" src="../js/iscroll.js"></script>
-    <script type="text/javascript" src="../js/jquery-1.12.4.js"></script>
-    <script type="text/javascript" src="../js/touch.js"></script>
-
-    <script type="text/javascript">
-        var myScroll;
-        function loaded () {
-            touch.on('#footerUp','touchstart',function(e){
-                e.preventDefault();  //禁止默认时间，浏览器缩放，滚动条滚动
-            });
-            myScroll = new IScroll('#wrapper', {
-                scrollbars: true,
-                mouseWheel: true,
-                interactiveScrollbars: true,
-                shrinkScrollbars: 'scale',
-                fadeScrollbars: true
-            });
-            var $footerUp = $("#footerUp");
-            var $header = $("#header");
-            $header.css("background","rgba(0,143,58,.8)");
-            touch.on($footerUp,'tap',function (e){
-                var $target = $(e.target).index();
-                /*var $footerDiv = $("#footer>div:eq("+$target+")");
-                $("#footer>div").removeClass();
-                $footerDiv.addClass("divColor");*/
-                if($target === 0){
-                    /*$header.css("background","rgba(0,143,58,0)");*/
-                    window.location = "../index.html";
-                    /*$header.html(
-                            "<div class='headerBox0'>" +
-                            "请输入要搜索的商品名称" +
-                            "<i class='iconfont headerIconfont'>&#xe60b;</i>" +
-                            "</div>"
-                    );*/
-                }else if($target === 1){
-                    /*$header.css("background","rgba(0,143,58,.8)");*/
-                    /*$header.html(
-                            "<div class='headerBox0'>" +
-                            "请输入要搜索的商品名称" +
-                            "<i class='iconfont headerIconfont'>&#xe60b;</i>" +
-                            "</div>"
-                    );*/
-                }else if($target === 2){
-                    /*$header.css("background","rgba(0,143,58,.8)");*/
-                    window.location = "my.html";
-                    /*$header.html(
-                            "<div class='headerBox2'>" +
-                            $footerDiv.attr("footerText") +
-                            "</div>"
-                    );*/
-                }else if($target === 3){
-                    /*$header.css("background","rgba(0,143,58,.8)");*/
-                    window.location = "shopCar.html";
-                }else if($target === 4){
-                    /*$header.css("background","rgba(0,143,58,.8)");*/
-                    window.location = "aboutUs.html";
-                }
-            });
-        }
-    </script>
 </head>
-<body onload="loaded()">
+<body>
 <div id="header">
     <div class="headerBox0">
         请输入要搜索的商品名称
@@ -76,58 +22,48 @@
 </div>
 <div id="wrapper">
     <div id="scroller">
-        <ul>
-            <li>Pretty row 1</li>
-            <li>Pretty row 2</li>
-            <li>Pretty row 3</li>
-            <li>Pretty row 4</li>
-            <li>Pretty row 5</li>
-            <li>Pretty row 6</li>
-            <li>Pretty row 7</li>
-            <li>Pretty row 8</li>
-            <li>Pretty row 9</li>
-            <li>Pretty row 10</li>
-            <li>Pretty row 11</li>
-            <li>Pretty row 12</li>
-            <li>Pretty row 13</li>
-            <li>Pretty row 14</li>
-            <li>Pretty row 15</li>
-            <li>Pretty row 16</li>
-            <li>Pretty row 17</li>
-            <li>Pretty row 18</li>
-            <li>Pretty row 19</li>
-            <li>Pretty row 20</li>
-            <li>Pretty row 21</li>
-            <li>Pretty row 22</li>
-            <li>Pretty row 23</li>
-            <li>Pretty row 24</li>
-            <li>Pretty row 25</li>
-            <li>Pretty row 26</li>
-            <li>Pretty row 27</li>
-            <li>Pretty row 28</li>
-            <li>Pretty row 29</li>
-            <li>Pretty row 30</li>
-            <li>Pretty row 31</li>
-            <li>Pretty row 32</li>
-            <li>Pretty row 33</li>
-            <li>Pretty row 34</li>
-            <li>Pretty row 35</li>
-            <li>Pretty row 36</li>
-            <li>Pretty row 37</li>
-            <li>Pretty row 38</li>
-            <li>Pretty row 39</li>
-            <li>Pretty row 40</li>
-            <li>Pretty row 41</li>
-            <li>Pretty row 42</li>
-            <li>Pretty row 43</li>
-            <li>Pretty row 44</li>
-            <li>Pretty row 45</li>
-            <li>Pretty row 46</li>
-            <li>Pretty row 47</li>
-            <li>Pretty row 48</li>
-            <li>Pretty row 49</li>
-            <li>Pretty row 50</li>
-        </ul>
+        <div id="cont">
+            <header class="mui-bar mui-bar-nav">
+                <!--<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>-->
+                <h1 class="mui-title">
+                    <div>热销榜</div>
+                    <p class="detail">全部分类</p>
+                    <div class="order">综合排序</div>
+                </h1>
+                <div id="contain" class="mui-col-xs-9">
+                    <!--   <a href="javascript:;">全部分类</a>
+                       <a href="javascript:;">饮用水</a>
+                       <a href="javascript:;">茶饮|咖啡</a>
+                       <a href="javascript:;">功能饮料</a>-->
+                </div>
+            </header>
+            <div class="mui-content mui-row mui-fullscreen">
+                <div class="mui-col-xs-3">
+                    <div id="segmentedControls"
+                         class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-vertical">
+                        <a class="mui-control-item" href="javascript:;">酒饮</a>
+                        <a class="mui-control-item" href="javascript:;">果蔬</a>
+                        <a class="mui-control-item" href="javascript:;">调品</a>
+                        <a class="mui-control-item" href="javascript:;">休食</a>
+                        <a class="mui-control-item" href="javascript:;">百货</a>
+                        <a class="mui-control-item" href="javascript:;">粮油</a>
+                        <a class="mui-control-item" href="javascript:;">清洁</a>
+                    </div>
+                </div>
+                <div id="segmentedControlContents" class="mui-col-xs-9" style="border-left: 1px solid #c8c7cc;">
+                    <!--  <div id="content1" class="mui-control-content">
+                          <ul class="mui-table-view">
+                            <li class="mui-table-view-cell">第' + 1 + '个选项卡</li>
+                          </ul>
+                      </div>
+                      <div id="content2" class="mui-control-content">
+                          <ul class="mui-table-view">
+                              <li class="mui-table-view-cell">第' +2 + '个选项卡</li>
+                          </ul>
+                      </div>-->
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <div id="footer">
@@ -159,5 +95,8 @@
     <div></div>
     <div></div>
 </div>
+<script src="../js/zepto.js"></script>
+<!--<script src="../js/mui.min.js"></script>-->
+<script src="../js/list.js"></script>
 </body>
 </html>
